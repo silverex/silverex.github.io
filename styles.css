@@ -1,6 +1,18 @@
+* {
+	box-sizing: border-box;
+}
 body {
     background: #fff;
 }
 ul {
 	display: inline;
+}
+.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+	position: fixed;
 }
