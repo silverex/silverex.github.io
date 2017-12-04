@@ -215,16 +215,19 @@ samp {
 
 
 
-button,
+
 input,
 optgroup,
 select,
 textarea {
   color: inherit;
-  
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
   font: inherit;
-  
-  margin: 0;
+  width: 100%;
+  margin: .5em;
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
    }
 
 
@@ -314,7 +317,12 @@ legend {
 
 
 textarea {
-  overflow: auto; }
+  overflow: auto; 
+height: 150px;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+ box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);}
 
 
 
@@ -505,7 +513,7 @@ hr {
   border: none;
   border-top: 4px solid #00adb5;
   width: 4rem;
-  margin: 1rem auto 4rem auto; }
+  margin: 1rem auto 2rem auto; }
 
 
 img {
@@ -554,7 +562,10 @@ img {
   padding: 1.5rem 1.5rem 0 1.5rem;
   min-height: 150px;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+   }
+
   @media all and (min-width: 40em) {
     
     .card {
@@ -563,7 +574,7 @@ img {
   @media all and (min-width: 47.5em) {
     
     .card {
-      width: 100%;
+      width: 40%;
       max-width: 80vw;
       margin: 1% 4%; } }
 
@@ -634,15 +645,16 @@ blockquote {
 
 h1, h2, h3, h4 {
   font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
-  margin: 1.414em 0 0.5em;
+  margin: 0 1rem 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-  color: rgba(0, 0, 0, 0.9); }
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center; }
 
 
 h1 {
   font-size: 2.441em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-style: normal;
   font-weight: 600;
   margin-top: 0; }
@@ -657,7 +669,7 @@ h3 {
   font-size: 1.563em;
   font-style: normal;
   font-weight: 400;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 0; }
 
 
@@ -698,7 +710,6 @@ small, .font_small {
     font-weight: 400;
     font-size: 1.563em;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
     text-align: center;
     margin: 0 20px;
     -webkit-animation-name: fadeInUp;
@@ -769,7 +780,7 @@ small, .font_small {
             justify-content: center; }
   
   .masthead--third {
-    height: 66vh;
+    height: 33vh;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -1550,4 +1561,66 @@ em.leader {
   box-sizing: border-box; }
 #navname {
 	margin-top: .5rem;
+}
+#mainpicture {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin: 0 auto;
+	border: 1.5px solid white;
+	border-radius: 50%;
+}
+header {
+	background-image: url("assets/headerbackground.jpg");
+}
+.contactcard {
+  border-radius: 4px;
+  border: 1px solid #EEEEEE;
+  margin: 1rem 1rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  min-height: 150px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+   }
+
+  @media all and (min-width: 40em) {
+    
+    .contactcard {
+      margin-left: 80px auto;
+      margin-right: 80px auto; } }
+  @media all and (min-width: 47.5em) {
+    
+    .contactcard {
+      width: 100%;
+      max-width: 60vw;
+      margin: 1% 20%; } }
+
+.inputform {
+	width: 75%;
+	margin: 0 auto;
+}
+.inputform input[type=button] {
+	border-radius: 4px;
+	margin: 1em 20em;
+	text-align: center;
+}
+.socialicon {
+	height: 16px;
+	width: 16px;
+	margin: 1rem;
+}
+.socialicon img {
+	height: 25px;
+	width: 25px;
+}
+.socialicon img:hover {
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0, 0.5);
+}
+#socialicons {
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	align-items: center;
+	margin-right: 3rem;
 }
